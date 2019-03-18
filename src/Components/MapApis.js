@@ -7,7 +7,9 @@ export default class MapApis extends Component {
 
 	loadMap = () => {
 		loadScript(
-			'https://maps.googleapis.com/maps/api/js?key=AIzaSyBc9rfRR9Fy_V33MWWfJsT0Iw2LIGOcgVI&region=US&callback=initMap'
+			`https://maps.googleapis.com/maps/api/js?key=${
+				process.env.REACT_APP_GOOGLE_WEATHER_WORK_API
+			}&region=US&callback=initMap`
 		);
 		window.initMap = this.initMap;
 	};
@@ -349,11 +351,10 @@ export default class MapApis extends Component {
 
 		let options = {
 			zoom: 11,
-			center: { lat: 40.524670, lng: -111.863823 },
+			center: { lat: 40.52467, lng: -111.863823 },
 			mapTypeControlOptions: {
-				mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-						'styled_map']
-			  }
+				mapTypeIds: ['styled_map'],
+			},
 		};
 
 		let map = new window.google.maps.Map(
