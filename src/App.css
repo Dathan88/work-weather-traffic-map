@@ -1,13 +1,6 @@
-.App-title {
-    font-size: 1.5rem;
-}
-
-.App-intro {
-    font-size: large;
-}
-
 #map {
     height: 100vh;
+    width: 75vw;
 }
 
 html, body {
