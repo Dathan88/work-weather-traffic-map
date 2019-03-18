@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "homepage": "https://dathan88.github.io/work-weather-traffic-map",
   "private": true,
+  "engines": {
+    "node": "^10.15.2"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "gh-pages": "^2.0.1",
