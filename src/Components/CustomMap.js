@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class MapApis extends Component {
+export default class CustomMap extends Component {
 	componentDidMount() {
 		this.loadMap();
 	}
@@ -415,5 +415,3 @@ let loadScript = url => {
 	script.defer = true;
 	index.parentNode.insertBefore(script, index);
 };
-
-//! UTA Token UTDOP000ZRH
