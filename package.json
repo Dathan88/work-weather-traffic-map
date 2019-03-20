@@ -4,11 +4,14 @@
   "homepage": "https://dathan88.github.io/work-weather-traffic-map",
   "private": true,
   "dependencies": {
+    "dotenv": "^7.0.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
-    "twit": "^2.2.11"
+    "react-twitter-widgets": "^1.7.1",
+    "twit": "^2.2.11",
+    "twitter-text": "^3.0.0"
   },
   "scripts": {
     "predeploy": "npm run build",
