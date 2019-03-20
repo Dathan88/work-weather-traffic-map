@@ -32,10 +32,10 @@ export default class Tweets extends Component {
 /* 
 const Twit = require('twit');
 const T = new Twit({
-	consumer_key: 'IwlK6hJ4ND3flhi8f5Zw2cIbH ',
-	consumer_secret: 'CZRi1YgEQUQLLiDzSdhwivKRpjx9U1vLVZyVwKOYGX9nB7hba4 ',
-	access_token: '2742997539-rkTFXN5b7Yq9DVyiJqBUh69CdCOvPWJMIL3i9uy',
-	access_token_secret: 'eEadd7YaDtuEyc9zYvz6dfnAqC4EIu87qEy8Kq63SrRjF ',
+	consumer_key: 'REACT_APP_TWITTER_API ',
+	consumer_secret: 'REACT_APP_TWITTER_SECRET_API ',
+	access_token: 'REACT_APP_TWITTER_ACCESS_TOKEN',
+	access_token_secret: 'REACT_APP_TWITTER_SECRET_ACCESS_TOKEN ',
 });
 
 const workArea = ['-112.12', '40.22', '-111.58', '40.78'];
