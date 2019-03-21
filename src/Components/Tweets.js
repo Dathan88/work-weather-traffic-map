@@ -2,32 +2,24 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Timeline } from 'react-twitter-widgets';
 
-export default class Tweets extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-
-	render() {
-		return (
-			<Timeline
-				dataSource={{
-					sourceType: 'list',
-					ownerScreenName: 'jakkTwoKays',
-					slug: 'work-traffic-weather',
-				}}
-				options={{
-					height: '300',
-					width: '300',
-					chrome: 'noheader , nofooter , noborders , noscrollbar ',
-					linkColor: '#E81C4F',
-					ariaPolite: 'assertive',
-				}}
-				onLoad={() => console.log('Timeline is loaded!')}
-			/>
-		);
-	}
-}
+export const Tweets = ({className, id}) => (
+			<div id={id} className={className}>
+				<Timeline
+					dataSource={{
+						sourceType: 'list',
+						ownerScreenName: 'jakkTwoKays',
+						slug: 'work-traffic-weather',
+					}}
+					options={{
+						chrome: 'noheader , nofooter , noborders , noscrollbar ',
+						linkColor: '#E81C4F',
+						ariaPolite: 'assertive',
+						theme: 'dark',
+					}}
+					onLoad={() => console.log('Timeline is loaded!')}
+				/>
+			</div>
+)
 
 /* 
 const Twit = require('twit');
