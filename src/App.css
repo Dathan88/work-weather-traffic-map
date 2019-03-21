@@ -1,10 +1,44 @@
-#map {
-    height: 100vh;
-    /* width: 75vw; */
+html,
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: 'Alegreya';
 }
 
-html, body {
+#map {
+    position: absolute !important;
     height: 100vh;
-    margin: 0;
-    padding: 0;
+    width: 100vw;
+    z-index: 0;
+}
+
+#tweets {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+button#toggler {
+	position: fixed;
+	font-size: 1.8rem;
+	height: 3rem;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+	width: 100vw;
+	bottom: -1px;
+	border: none;
+	outline: none;
+	background-color: #222;
+	color: white;
+    font-family: 'Alegreya';
+    z-index: 2;
+}
+
+.visible {
+	z-index: 1;
+}
+
+.invisible {
+	z-index: -1;
 }
