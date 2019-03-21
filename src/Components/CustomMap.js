@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 export default class CustomMap extends Component {
 	componentDidMount() {
@@ -17,361 +17,361 @@ export default class CustomMap extends Component {
 		const styledMapType = new window.google.maps.StyledMapType(
 			[
 				{
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#212121"
-					}
-				  ]
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#212121',
+						},
+					],
 				},
 				{
-				  "elementType": "labels.icon",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					elementType: 'labels.icon',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#757575"
-					}
-				  ]
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#757575',
+						},
+					],
 				},
 				{
-				  "elementType": "labels.text.stroke",
-				  "stylers": [
-					{
-					  "color": "#212121"
-					}
-				  ]
+					elementType: 'labels.text.stroke',
+					stylers: [
+						{
+							color: '#212121',
+						},
+					],
 				},
 				{
-				  "featureType": "administrative",
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#757575"
-					}
-				  ]
+					featureType: 'administrative',
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#757575',
+						},
+					],
 				},
 				{
-				  "featureType": "administrative.country",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#9e9e9e"
-					}
-				  ]
+					featureType: 'administrative.country',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#9e9e9e',
+						},
+					],
 				},
 				{
-				  "featureType": "administrative.land_parcel",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'administrative.land_parcel',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "administrative.locality",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#bdbdbd"
-					}
-				  ]
+					featureType: 'administrative.locality',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#bdbdbd',
+						},
+					],
 				},
 				{
-				  "featureType": "landscape.man_made",
-				  "stylers": [
-					{
-					  "color": "#41fc6b"
-					},
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'landscape.man_made',
+					stylers: [
+						{
+							color: '#41fc6b',
+						},
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "poi",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'poi',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "poi",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#757575"
-					}
-				  ]
+					featureType: 'poi',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#757575',
+						},
+					],
 				},
 				{
-				  "featureType": "poi.attraction",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'poi.attraction',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "poi.business",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'poi.business',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "poi.park",
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#181818"
-					}
-				  ]
+					featureType: 'poi.park',
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#181818',
+						},
+					],
 				},
 				{
-				  "featureType": "poi.park",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#616161"
-					}
-				  ]
+					featureType: 'poi.park',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#616161',
+						},
+					],
 				},
 				{
-				  "featureType": "poi.park",
-				  "elementType": "labels.text.stroke",
-				  "stylers": [
-					{
-					  "color": "#1b1b1b"
-					}
-				  ]
+					featureType: 'poi.park',
+					elementType: 'labels.text.stroke',
+					stylers: [
+						{
+							color: '#1b1b1b',
+						},
+					],
 				},
 				{
-				  "featureType": "road",
-				  "elementType": "geometry.fill",
-				  "stylers": [
-					{
-					  "color": "#2c2c2c"
-					}
-				  ]
+					featureType: 'road',
+					elementType: 'geometry.fill',
+					stylers: [
+						{
+							color: '#2c2c2c',
+						},
+					],
 				},
 				{
-				  "featureType": "road",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#8a8a8a"
-					}
-				  ]
+					featureType: 'road',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#8a8a8a',
+						},
+					],
 				},
 				{
-				  "featureType": "road.arterial",
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#373737"
-					}
-				  ]
+					featureType: 'road.arterial',
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#373737',
+						},
+					],
 				},
 				{
-				  "featureType": "road.arterial",
-				  "elementType": "labels",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'road.arterial',
+					elementType: 'labels',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway",
-				  "stylers": [
-					{
-					  "weight": 2.5
-					}
-				  ]
+					featureType: 'road.highway',
+					stylers: [
+						{
+							weight: 2.5,
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway",
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#3c3c3c"
-					}
-				  ]
+					featureType: 'road.highway',
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#3c3c3c',
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway",
-				  "elementType": "labels.text",
-				  "stylers": [
-					{
-					  "color": "#6580fe"
-					}
-				  ]
+					featureType: 'road.highway',
+					elementType: 'labels.text',
+					stylers: [
+						{
+							color: '#6580fe',
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway.controlled_access",
-				  "stylers": [
-					{
-					  "visibility": "on"
-					}
-				  ]
+					featureType: 'road.highway.controlled_access',
+					stylers: [
+						{
+							visibility: 'on',
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway.controlled_access",
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#64b1ff"
-					}
-				  ]
+					featureType: 'road.highway.controlled_access',
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#64b1ff',
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway.controlled_access",
-				  "elementType": "geometry.fill",
-				  "stylers": [
-					{
-					  "color": "#c0c0c0"
-					}
-				  ]
+					featureType: 'road.highway.controlled_access',
+					elementType: 'geometry.fill',
+					stylers: [
+						{
+							color: '#c0c0c0',
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway.controlled_access",
-				  "elementType": "geometry.stroke",
-				  "stylers": [
-					{
-					  "color": "#0080ff"
-					},
-					{
-					  "weight": 3
-					}
-				  ]
+					featureType: 'road.highway.controlled_access',
+					elementType: 'geometry.stroke',
+					stylers: [
+						{
+							color: '#0080ff',
+						},
+						{
+							weight: 3,
+						},
+					],
 				},
 				{
-				  "featureType": "road.highway.controlled_access",
-				  "elementType": "labels",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'road.highway.controlled_access',
+					elementType: 'labels',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "road.local",
-				  "elementType": "labels",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'road.local',
+					elementType: 'labels',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "road.local",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#616161"
-					}
-				  ]
+					featureType: 'road.local',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#616161',
+						},
+					],
 				},
 				{
-				  "featureType": "transit",
-				  "stylers": [
-					{
-					  "color": "#aeae00"
-					},
-					{
-					  "visibility": "on"
-					},
-					{
-					  "weight": 3.5
-					}
-				  ]
+					featureType: 'transit',
+					stylers: [
+						{
+							color: '#aeae00',
+						},
+						{
+							visibility: 'on',
+						},
+						{
+							weight: 3.5,
+						},
+					],
 				},
 				{
-				  "featureType": "transit",
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#ffff00"
-					},
-					{
-					  "weight": 3.5
-					}
-				  ]
+					featureType: 'transit',
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#ffff00',
+						},
+						{
+							weight: 3.5,
+						},
+					],
 				},
 				{
-				  "featureType": "transit",
-				  "elementType": "geometry.fill",
-				  "stylers": [
-					{
-					  "color": "#ffff00"
-					},
-					{
-					  "visibility": "on"
-					}
-				  ]
+					featureType: 'transit',
+					elementType: 'geometry.fill',
+					stylers: [
+						{
+							color: '#ffff00',
+						},
+						{
+							visibility: 'on',
+						},
+					],
 				},
 				{
-				  "featureType": "transit",
-				  "elementType": "geometry.stroke",
-				  "stylers": [
-					{
-					  "visibility": "on"
-					}
-				  ]
+					featureType: 'transit',
+					elementType: 'geometry.stroke',
+					stylers: [
+						{
+							visibility: 'on',
+						},
+					],
 				},
 				{
-				  "featureType": "transit",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#757575"
-					}
-				  ]
+					featureType: 'transit',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#757575',
+						},
+					],
 				},
 				{
-				  "featureType": "transit.station.airport",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'transit.station.airport',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "water",
-				  "stylers": [
-					{
-					  "visibility": "off"
-					}
-				  ]
+					featureType: 'water',
+					stylers: [
+						{
+							visibility: 'off',
+						},
+					],
 				},
 				{
-				  "featureType": "water",
-				  "elementType": "geometry",
-				  "stylers": [
-					{
-					  "color": "#000000"
-					}
-				  ]
+					featureType: 'water',
+					elementType: 'geometry',
+					stylers: [
+						{
+							color: '#000000',
+						},
+					],
 				},
 				{
-				  "featureType": "water",
-				  "elementType": "labels.text.fill",
-				  "stylers": [
-					{
-					  "color": "#3d3d3d"
-					}
-				  ]
-				}
-			  ],
+					featureType: 'water',
+					elementType: 'labels.text.fill',
+					stylers: [
+						{
+							color: '#3d3d3d',
+						},
+					],
+				},
+			],
 			{ name: 'Styled Map' }
 		);
 
@@ -379,7 +379,7 @@ export default class CustomMap extends Component {
 			zoom: 11,
 			center: { lat: 40.52467, lng: -111.863823 },
 			mapTypeControlOptions: {
-				mapTypeIds: ['styled_map'],
+				mapTypeIds: ['none'],
 			},
 		};
 
@@ -399,10 +399,13 @@ export default class CustomMap extends Component {
 	};
 
 	render() {
+		const divStyle = {
+			position: 'fixed'
+		}
 		return (
-			<main>
-				<div id="map" />
-			</main>
+			<Fragment>
+				<div id='map' style={divStyle} />
+			</Fragment>
 		);
 	}
 }
