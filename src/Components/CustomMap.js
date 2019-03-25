@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 
 export default class CustomMap extends Component {
-	componentDidMount() {
+	/* componentDidMount() {
 		this.loadMap();
-	}
+	} */
 
 	loadMap = () => {
 		loadScript(

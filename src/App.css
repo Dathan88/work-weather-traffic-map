@@ -1,6 +1,16 @@
 html,
-body {
-	height: 100vh;
+body,#root, .App {
+	min-height: 100vh;
+	min-width: 100vw;
+	margin: 0;
+	padding: 0;
+	font-family: 'Alegreya';
+}
+
+.App {
+	position: absolute;
+	min-height: 100vh;
+	min-width: 100vw;
 	margin: 0;
 	padding: 0;
 	font-family: 'Alegreya';
@@ -15,19 +25,31 @@ body {
 
 #tweets {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
+	height: calc(100vh - 3.1rem) !important;
+	overflow: scroll;
+}
+
+#tweets > div {
+	/* height: inherit !important; */
+}
+
+.twitter-timeline {
+	/* height: inherit !important; */
+	/* overflow: scroll; */
 }
 
 button#toggler {
 	position: fixed;
+	padding: 0;
+	bottom: 0;
+	left: 0;
 	font-size: 1.8rem;
 	height: 3rem;
 	word-spacing: 5px;
 	letter-spacing: 1px;
-	width: 100vw;
-	bottom: -1px;
-	border: none;
+	width: calc(100vw - 1.75rem);
+	border: 1px dashed white;
 	outline: none;
 	background-color: #222;
 	color: white;
