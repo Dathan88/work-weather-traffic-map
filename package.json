@@ -6,10 +6,11 @@
   "dependencies": {
     "dotenv": "^7.0.0",
     "gh-pages": "^2.0.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-scripts": "2.1.8",
     "react-twitter-widgets": "^1.7.1",
+    "reactify": "^1.1.1",
     "twit": "^2.2.11",
     "twitter-text": "^3.0.0"
   },
@@ -29,5 +30,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "envify": "^4.1.0",
+    "uglify-js": "^3.5.2",
+    "uglifyify": "^5.0.1"
+  }
 }
