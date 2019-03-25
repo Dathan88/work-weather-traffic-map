@@ -9,7 +9,7 @@ body,
 }
 
 .App {
-	position: absolute;
+	position: relative;
 	min-height: 100vh;
 	width: calc(100vw - (100vw - 100%));
 	margin: 0;
@@ -19,7 +19,7 @@ body,
 
 #map {
 	position: fixed !important;
-	height: 100vh;
+	height: calc(100vh - 3rem);
 	width: calc(100vw - (100vw - 100%));
 	z-index: 0;
 }
@@ -59,4 +59,9 @@ button#toggler:active {
 
 .invisible {
 	z-index: -1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
