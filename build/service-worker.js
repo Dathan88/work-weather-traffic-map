@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/work-weather-traffic-map/precache-manifest.8e6df53f968d9ffe47c0cf55214cbc0b.js"
+  "/work-weather-traffic-map/precache-manifest.34a981573c02df295e09dede1f842f2a.js"
 );
 
 workbox.clientsClaim();
