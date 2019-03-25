@@ -9,12 +9,13 @@ body,
 }
 
 .App {
-	position: absolute;
+	position: relative;
 	min-height: 100vh;
 	width: calc(100vw - (100vw - 100%));
 	margin: 0;
 	padding: 0;
 	font-family: 'Alegreya';
+	overflow: hidden;
 }
 
 #map {
