@@ -9,9 +9,11 @@
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8",
     "react-twitter-widgets": "^1.7.1",
+    "source-map-explorer": "^1.8.0",
     "twit": "^2.2.11"
   },
   "scripts": {
+    "analyze": "source-map-explorer ./build/static/js/*.js ",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
