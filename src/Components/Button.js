@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export const Button = ({ text, onClick, type, disabled, id }) => (
 	<button id ={id} type={type} disabled={disabled} onClick={onClick}>
